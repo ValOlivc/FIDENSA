@@ -1,0 +1,130 @@
+.footer {
+    width: 100%;
+    padding: 0;
+    margin-top: 3rem;
+}
+
+.footer__card {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 2.25rem;
+    width: 100%;
+    max-width: none;
+    margin: 0;
+    border-radius: 0;
+    padding: 2.2rem 2.5rem 1.5rem;
+    background: var(--fidensa-blue);
+    box-shadow: none;
+}
+
+.footer__left {
+    min-width: 310px;
+}
+
+.footer__logo {
+    width: 210px;
+    height: auto;
+    display: block;
+    margin-bottom: 1.05rem;
+    opacity: 0.7;
+    filter: saturate(0.85);
+}
+
+.footer__text {
+    margin: 0;
+    color: rgba(255, 255, 255, 0.45);
+    font-size: 0.95rem;
+    line-height: 1.5;
+    font-weight: 500;
+    max-width: 360px;
+}
+
+.footer__social-icons {
+    margin-top: 1.35rem;
+    display: flex;
+    gap: 0.65rem;
+    opacity: 0.6;
+}
+
+.footer__icon {
+    width: 36px;
+    height: 36px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgba(255, 255, 255, 0.55);
+    font-size: 0.85rem;
+    font-weight: 700;
+    user-select: none;
+}
+
+.footer__columns {
+    display: flex;
+    gap: 4.5rem;
+    align-items: flex-start;
+}
+
+.footer__column {
+    min-width: 170px;
+}
+
+.footer__heading {
+    margin: 0 0 1rem;
+    font-size: 0.95rem;
+    letter-spacing: 0.06em;
+    color: rgba(255, 255, 255, 0.35);
+    font-weight: 700;
+}
+
+.footer__column ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.55rem;
+}
+
+.footer__link {
+    color: rgba(255, 255, 255, 0.42);
+    text-decoration: none;
+    font-size: 0.95rem;
+    font-weight: 500;
+}
+
+.footer__link:hover {
+    color: rgba(255, 255, 255, 0.65);
+}
+
+.footer__bottom {
+    width: 100%;
+    max-width: none;
+    margin: 0;
+    padding: 1rem 1rem 1rem 1rem;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.35);
+    font-size: 0.82rem;
+    font-weight: 600;
+    background: var(--fidensa-blue);
+}
+
+@media (max-width: 900px) {
+    .footer__card {
+        flex-direction: column;
+        padding: 1.6rem 1.5rem 1.2rem;
+    }
+
+    .footer__columns {
+        gap: 2rem;
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .footer__bottom {
+        padding: 1rem 1rem 1rem 1rem;
+    }
+}

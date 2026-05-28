@@ -1,0 +1,164 @@
+.crediMujer {
+    width: 100%;
+    background: var(--fidensa-blue);
+    padding: 2rem 0 2rem;
+    border-radius: 0 0 100px 100px;
+    position: relative;
+}
+
+.crediMujer__inner {
+    width: min(1120px, calc(100% - 5rem));
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 3rem;
+}
+
+.crediMujer__text {
+    flex: 1 1 520px;
+}
+
+.crediMujer__title {
+    margin: 0 0 0.9rem;
+    font-size: clamp(2rem, 3.2vw, 3rem);
+    font-weight: 800;
+    letter-spacing: 0.01em;
+}
+
+.crediMujer__titleAccent {
+    color: #ff1585;
+}
+
+.crediMujer__lead {
+    margin: 0 0 1rem;
+    color: rgba(255, 255, 255, 0.88);
+    font-size: 1.05rem;
+}
+
+.crediMujer__subtitle {
+    margin: 0 0 0.45rem;
+    font-size: 1.25rem;
+    font-weight: 800;
+}
+
+.crediMujer__list {
+    margin: 0 0 1.25rem;
+    padding: 0;
+    list-style: none;
+    display: grid;
+    gap: 0.35rem;
+    color: rgba(255, 255, 255, 0.88);
+    font-size: 1.05rem;
+}
+
+.crediMujer__list li {
+    position: relative;
+    padding-left: 0.8rem;
+}
+
+.crediMujer__list li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0.58rem;
+    width: 0;
+    height: 0;
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+    border-left: 7px solid #ff1585;
+}
+
+.crediMujer__cta {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    padding: 0 1.25rem;
+    border: 0;
+    border-radius: 999px;
+    background: #e10074;
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.crediMujer__media {
+    flex: 0 0 560px;
+    position: relative;
+    min-height: 320px;
+    display: flex;
+    align-items: flex-end;
+}
+
+.crediMujer__photo {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.crediMujer__dot {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-radius: 999px;
+}
+
+.crediMujer__dot--orange {
+    left: -12px;
+    top: 42px;
+    background: #ff8f00;
+}
+
+.crediMujer__dot--yellow {
+    right: 36px;
+    bottom: -4px;
+    width: 90px;
+    height: 90px;
+    background: #ffcc00;
+}
+
+.crediMujer__indicators {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 18px;
+    display: flex;
+    gap: 16px;
+    z-index: 3;
+}
+
+.crediMujer__indicatorButton {
+    width: 6px;
+    height: 6px;
+    border-radius: 999px;
+    background: rgba(255, 255, 255, 0.72);
+    border: 0;
+    padding: 0;
+    cursor: pointer;
+}
+
+.crediMujer__indicatorButton[aria-current='true'] {
+    background: #ffffff;
+    width: 10px;
+    height: 4px;
+}
+
+@media (max-width: 980px) {
+    .crediMujer__inner {
+        width: calc(100% - 2.5rem);
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .crediMujer__media {
+        width: 100%;
+        flex: 0 0 auto;
+        min-height: 260px;
+    }
+
+    .crediMujer__indicators {
+        bottom: 12px;
+    }
+}

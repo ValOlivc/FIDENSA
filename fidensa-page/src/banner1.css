@@ -1,0 +1,139 @@
+.crediCarousel {
+    width: 100%;
+    background: var(--fidensa-blue);
+    padding: 2rem 0 2rem;
+    border-radius: 0 0 100px 100px;
+    position: relative;
+}
+
+.crediCarousel__inner {
+    width: min(1120px, calc(100% - 5rem));
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 3rem;
+}
+
+.crediCarousel__text {
+    flex: 1 1 520px;
+    color: #ffffff;
+}
+
+.crediCarousel__title {
+    margin: 0 0 1rem;
+    font-size: clamp(2rem, 3.2vw, 3rem);
+    font-weight: 800;
+    letter-spacing: 0.01em;
+}
+
+.crediCarousel__titleAccent {
+    color: #ff2f8f;
+}
+
+.crediCarousel__description {
+    margin: 0 0 1.25rem;
+    white-space: pre-line;
+    color: rgba(255, 255, 255, 0.85);
+    font-size: 0.98rem;
+    line-height: 1.6;
+    font-weight: 500;
+}
+
+.crediCarousel__cta {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    padding: 0 1.25rem;
+    border-radius: 999px;
+    border: 0;
+    background: #e10074;
+    color: #ffffff;
+    font-weight: 700;
+    cursor: pointer;
+    box-shadow: 0 10px 20px rgba(225, 0, 116, 0.25);
+}
+
+.crediCarousel__media {
+    flex: 0 0 560px;
+    position: relative;
+    min-height: 320px;
+    display: flex;
+    align-items: flex-end;
+}
+
+.crediCarousel__photo {
+    width: 100%;
+    height: auto;
+    display: block;
+    position: relative;
+    z-index: 1;
+}
+
+.crediCarousel__dot {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-radius: 999px;
+    z-index: 2;
+}
+
+.crediCarousel__dot--orange {
+    left: -12px;
+    top: 42px;
+    background: #ff8f00;
+}
+
+.crediCarousel__dot--yellow {
+    right: 36px;
+    bottom: -4px;
+    width: 90px;
+    height: 90px;
+    background: #ffcc00;
+}
+
+.crediCarousel__dots {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 18px;
+    display: flex;
+    gap: 16px;
+    z-index: 3;
+}
+
+.crediCarousel__dotButton {
+    width: 6px;
+    height: 6px;
+    border-radius: 999px;
+    background: rgba(255, 255, 255, 0.72);
+    border: 0;
+    padding: 0;
+    cursor: pointer;
+}
+
+.crediCarousel__dotButton[aria-current='true'] {
+    background: #ffffff;
+    width: 10px;
+    height: 4px;
+}
+
+@media (max-width: 980px) {
+    .crediCarousel__inner {
+        width: calc(100% - 2.5rem);
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1.5rem;
+    }
+
+    .crediCarousel__media {
+        width: 100%;
+        flex: 0 0 auto;
+        min-height: 260px;
+    }
+
+    .crediCarousel__dots {
+        bottom: 12px;
+    }
+}

@@ -1,0 +1,112 @@
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    width: 100%;
+    padding: 1rem 2.5rem;
+    background-color: #001626;
+    box-sizing: border-box;
+    transition:
+        background-color 0.35s ease,
+        backdrop-filter 0.35s ease,
+        -webkit-backdrop-filter 0.35s ease;
+}
+
+.header--scrolled {
+    background-color: #00162600;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+}
+
+.header__brand {
+    display: flex;
+    align-items: center;
+    gap: 0.65rem;
+    text-decoration: none;
+    color: inherit;
+}
+
+.header__brand:hover {
+    opacity: 0.92;
+}
+
+.header__logo {
+    flex-shrink: 0;
+    display: block;
+    width: 52px;
+    height: 52px;
+    object-fit: contain;
+}
+
+.header__wordmark {
+    display: flex;
+    flex-direction: column;
+    line-height: 1;
+    gap: 0.15rem;
+}
+
+.header__title {
+    font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+    font-size: 1.65rem;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+    color: #0066b3;
+}
+
+.header__subtitle {
+    font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+    font-size: 0.7rem;
+    font-weight: 600;
+    letter-spacing: 0.28em;
+    color: #d81b60;
+}
+
+.header__nav {
+    display: flex;
+    align-items: center;
+    gap: 2.25rem;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.header__link {
+    font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+    font-size: 0.95rem;
+    font-weight: 500;
+    color: #ffffff;
+    text-decoration: none;
+    white-space: nowrap;
+    transition: color 0.35s ease, opacity 0.2s ease;
+}
+
+.header__link:hover {
+    opacity: 0.8;
+}
+
+.header--scrolled .header__link {
+    color: #0066b3;
+}
+
+.header--scrolled .header__link:hover {
+    color: #004a99;
+    opacity: 1;
+}
+
+@media (max-width: 900px) {
+    .header {
+        flex-direction: column;
+        gap: 1.25rem;
+        padding: 1rem 1.5rem;
+    }
+
+    .header__nav {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1rem 1.5rem;
+    }
+}

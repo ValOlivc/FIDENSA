@@ -1,0 +1,56 @@
+:root {
+    --fidensa-blue: #001626;
+    --fidensa-blue-rgb: 0, 22, 38;
+    --fidensa-font: 'Segoe UI', system-ui, -apple-system, sans-serif;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: var(--fidensa-font);
+    background-color: #ffffff;
+    color: #ffffff;
+    padding-top: 84px;
+}
+
+button,
+input,
+select,
+textarea {
+    font: inherit;
+}
+
+.app__section {
+    min-height: 60vh;
+    padding: 3rem 2.5rem;
+    scroll-margin-top: 1rem;
+    background-color: var(--fidensa-blue);
+}
+
+.app__section h2 {
+    margin: 0;
+    font-size: 1.75rem;
+    font-weight: 600;
+}
+
+.bannerSlider {
+    overflow: hidden;
+    width: 100%;
+}
+
+.bannerSlider__track {
+    width: 200%;
+    display: flex;
+    transition: transform 650ms ease;
+    will-change: transform;
+}
+
+.bannerSlider__slide {
+    width: 50%;
+    flex: 0 0 50%;
+}

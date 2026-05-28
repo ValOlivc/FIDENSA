@@ -1,0 +1,138 @@
+.servicios {
+    width: 100%;
+    background: #ffffff;
+    padding: 3.5rem 0 4rem;
+}
+
+.servicios__inner {
+    width: min(1120px, calc(100% - 5rem));
+    margin: 0 auto;
+}
+
+.servicios__header {
+    margin-bottom: 2.5rem;
+}
+
+.servicios__label {
+    margin: 0 0 0.5rem;
+    font-size: 0.85rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    color: #ff2f8f;
+}
+
+.servicios__title {
+    margin: 0;
+    font-size: clamp(2rem, 3.5vw, 2.75rem);
+    font-weight: 800;
+    color: #1a1a1a;
+    line-height: 1.15;
+}
+
+.servicios__titleAccent {
+    color: #ffbf00;
+}
+
+.servicios__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    align-items: stretch;
+}
+
+.servicios__card {
+    display: flex;
+    flex-direction: column;
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+}
+
+.servicios__card--light {
+    background: #ffffff;
+}
+
+.servicios__card--dark {
+    background: var(--fidensa-blue);
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.18);
+}
+
+.servicios__imageWrap {
+    width: 100%;
+    aspect-ratio: 16 / 10;
+    overflow: hidden;
+}
+
+.servicios__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.servicios__body {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding: 1.35rem 1.25rem 1.5rem;
+}
+
+.servicios__cardTitle {
+    margin: 0 0 0.75rem;
+    font-size: 1.15rem;
+    font-weight: 800;
+    line-height: 1.3;
+}
+
+.servicios__card--light .servicios__cardTitle {
+    color: #1a1a1a;
+}
+
+.servicios__card--dark .servicios__cardTitle {
+    color: #ffffff;
+}
+
+.servicios__cardText {
+    margin: 0 0 1.25rem;
+    font-size: 0.92rem;
+    line-height: 1.55;
+    flex: 1;
+}
+
+.servicios__card--light .servicios__cardText {
+    color: #5c6470;
+}
+
+.servicios__card--dark .servicios__cardText {
+    color: rgba(255, 255, 255, 0.72);
+}
+
+.servicios__badge {
+    align-self: flex-start;
+    padding: 0.35rem 0.85rem;
+    border-radius: 999px;
+    font-size: 0.78rem;
+    font-weight: 700;
+}
+
+.servicios__card--light .servicios__badge {
+    background: #fef3dc;
+    color: #9a7b2e;
+}
+
+.servicios__card--dark .servicios__badge {
+    background: #2a2018;
+    color: #f5a623;
+}
+
+@media (max-width: 980px) {
+    .servicios__inner {
+        width: calc(100% - 2.5rem);
+    }
+
+    .servicios__grid {
+        grid-template-columns: 1fr;
+        max-width: 420px;
+        margin: 0 auto;
+    }
+}
