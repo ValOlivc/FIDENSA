@@ -8,7 +8,7 @@
     z-index: 1000;
     width: 100%;
     padding: 1rem 2.5rem;
-    background-color: #001626;
+    background-color: var(--fidensa-blue);
     box-sizing: border-box;
     transition:
         background-color 0.35s ease,
@@ -50,7 +50,7 @@
 }
 
 .header__title {
-    font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+    font-family: var(--fidensa-font);
     font-size: 1.65rem;
     font-weight: 700;
     letter-spacing: 0.02em;
@@ -58,7 +58,7 @@
 }
 
 .header__subtitle {
-    font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+    font-family: var(--fidensa-font);
     font-size: 0.7rem;
     font-weight: 600;
     letter-spacing: 0.28em;
@@ -75,7 +75,7 @@
 }
 
 .header__link {
-    font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+    font-family: var(--fidensa-font);
     font-size: 0.95rem;
     font-weight: 500;
     color: #ffffff;

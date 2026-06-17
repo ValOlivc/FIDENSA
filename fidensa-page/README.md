@@ -1,16 +1,49 @@
-# React + Vite
+# FIDENSA Page (PHP)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Sitio web de FIDENSA GROUP en **PHP** con plantillas modulares, CSS estático y JavaScript vanilla para el carrusel y el header.
 
-Currently, two official plugins are available:
+## Estructura
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+```
+fidensa-page/
+├── public/                 # Document root (servir desde aquí)
+│   ├── index.php
+│   ├── favicon.svg
+│   └── assets/
+│       ├── css/
+│       ├── js/
+│       ├── img/
+│       ├── icons/
+│       └── servicios/
+└── includes/
+    ├── config.php          # Datos y helpers (asset, e)
+    └── partials/           # Header, footer, banners, secciones
+```
 
-## React Compiler
+## Requisitos
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- PHP 8.1 o superior
 
-## Expanding the ESLint configuration
+## Ejecutar en local
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Desde la carpeta `fidensa-page`:
+
+```powershell
+php -S localhost:8000 -t public
+```
+
+Abre: http://localhost:8000
+
+## Secciones
+
+- Header fijo con blur al hacer scroll
+- Carrusel Banner 1 / Banner 2 (auto cada 10 s + dots)
+- Banner 3 (beneficios)
+- Servicios
+- Proceso simple (¿Cómo funciona?)
+- Footer
+
+## Notas
+
+- Los estilos están en `public/assets/css/`.
+- Las imágenes están en `public/assets/img/`, `icons/` y `servicios/`.
